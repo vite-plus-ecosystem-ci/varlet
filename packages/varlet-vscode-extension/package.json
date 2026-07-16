@@ -99,6 +99,7 @@
     "@types/vscode": "^1.100.0",
     "@vscode/vsce": "^3.2.1",
     "typescript": "catalog:",
+    "vite": "catalog:",
     "vite-plus": "catalog:"
   },
   "engines": {
