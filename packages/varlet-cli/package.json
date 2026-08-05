@@ -75,7 +75,8 @@
     "@varlet/icons": "workspace:*",
     "@varlet/touch-emulator": "workspace:*",
     "@varlet/ui": "workspace:*",
-    "rimraf": "catalog:"
+    "rimraf": "catalog:",
+    "vite": "catalog:"
   },
   "peerDependencies": {
     "@varlet/icons": "workspace:*",
