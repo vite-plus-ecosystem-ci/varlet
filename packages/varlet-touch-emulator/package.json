@@ -27,6 +27,7 @@
     "build": "vp pack && node build.js"
   },
   "devDependencies": {
+    "vite": "catalog:",
     "vite-plus": "catalog:"
   }
 }
