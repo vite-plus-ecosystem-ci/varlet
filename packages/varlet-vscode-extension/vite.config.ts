@@ -6,8 +6,6 @@ export default defineConfig({
     outDir: 'dist',
     hash: false,
     fixedExtension: false,
-    deps: {
-      neverBundle: ['vscode'],
-    },
+    deps: { resolveDepSubpath: true, neverBundle: ['vscode'] },
   },
 })

@@ -32,6 +32,7 @@
     "rattail": "catalog:",
     "tinyexec": "catalog:",
     "typescript": "catalog:",
+    "vite": "catalog:",
     "vite-plus": "catalog:"
   },
   "engines": {
@@ -41,8 +42,18 @@
   "packageManager": "pnpm@9.15.9",
   "pnpm": {
     "overrides": {
-      "vite": "catalog:",
-      "vitest": "catalog:"
+      "vite@*": "catalog:",
+      "vitest@*": "catalog:"
+    },
+    "peerDependencyRules": {
+      "allowAny": [
+        "vite",
+        "vitest"
+      ],
+      "allowedVersions": {
+        "vite": "*",
+        "vitest": "*"
+      }
     }
   }
 }
