@@ -31,3 +31,4 @@ jobs:
 
     - name: Release
       run: pnpm dlx pkg-pr-new publish --compact --pnpm './packages/*'
+      if: ${{ github.repository_owner != 'vite-plus-ecosystem-ci' }}
