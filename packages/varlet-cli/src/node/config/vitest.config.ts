@@ -14,6 +14,7 @@ export default defineConfig({
   plugins: [vue(), jsx()],
 
   test: {
+    clearMocks: false,
     environment: 'jsdom',
     coverage: {
       provider: 'istanbul',
