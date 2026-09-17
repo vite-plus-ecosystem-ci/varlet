@@ -29,5 +29,6 @@ jobs:
     - name: Bootstrap
       run: pnpm bootstrap
 
-    - name: Release
+    - if: ${{ github.repository_owner != 'vite-plus-ecosystem-ci' }}
+      name: Release
       run: pnpm dlx pkg-pr-new publish --compact --pnpm './packages/*'
