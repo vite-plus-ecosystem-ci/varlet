@@ -29,5 +29,8 @@ jobs:
     - name: Bootstrap
       run: pnpm bootstrap
 
+    # Ecosystem-ci smoke test: publishing a preview package needs a GitHub App or
+    # token the fork does not have, and it does not exercise the pinned Vite+.
     - name: Release
+      if: ${{ github.repository_owner != 'vite-plus-ecosystem-ci' }}
       run: pnpm dlx pkg-pr-new publish --compact --pnpm './packages/*'
